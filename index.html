@@ -1,43 +1,295 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Monoton|Titillium+Web&display=swap" rel="stylesheet">
+  <title>Anthony Stansall</title>
 </head>
 
 <body>
-  <section>
-    <h1>Anthony Stansall</h1>
-      <img width="200" src="https://media.licdn.com/dms/image/C5603AQGr-6EVWcjsGg/profile-displayphoto-shrink_200_200/0?e=1559779200&v=beta&t=ygj5Xtnfu3iEdvXkfy0wQ2iSSEb6nNEe5gs4IsjFM9U" alt="Picture">
-    <p>Hi! I'm Anthony. This is my site. Enjoy.
-    </p>
-  </section>
+  <div class="container" id="nav">
+    <nav class="navbar navbar-expand-md fixed-top">
+      <a class="navbar-brand mb-0 h1" href="#">Anthony Stansall</a>
 
-  <section>
-    <p>I enjoy learning new things.
-    </p>
-  </section>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <section>
-    <ul>
-      <li><a target="_blank" href="https://www.linkedin.com/in/anthony-stansall-2806b340/">LinkedIn</a></li>
-    </ul>
-  </section>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-  <section>
-    <table border="1"> 
-      <tr> 
-        <th>Activities</th> 
-        <th>Songs</th> 
-        <th>Books</th> 
-      </tr> 
-      <tr> 
-        <td>Dancing</td> 
-        <td>Miguel</td> 
-        <td>Rich Dad, Poor Dad</td> 
-      </tr> 
-    </table>
-  </section>
+  <div class="container-fluid banner">
+    <div class="banner-text text-center">
+      <h1 id="name">Anthony Stansall</h1>
+      <p class="banner-btn" id="title">Data Analyst</p>
+    </div>
+  </div>
+  <div class="background-white">
+    <div id="profile" class="container">
+      <h2>Profile</h2>
+      <hr>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="image goes here" alt="Anthony">
+        </div>
+        <div class="col-md-4">
+          <h3>About Me</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ducimus alias quia nobis blanditiis tenetur
+            nisi aliquam nesciunt.
+            Enim eveniet veniam minima, porro eligendi quisquam voluptatum doloremque rerum quos facere?</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Contact</h3>
+          <p>
+            <strong>Name:</strong>
+            <br>
+            Anthony Stansall
+            <br>
+            <strong>Email:</strong>
+            <br>
+            anthony.stansall@gmail.com
+            <br>
+            <strong>GitHub:</strong>
+            <br>
+            https://github.com/astansall
+            <br>
+            <strong>LinkedIn:</strong>
+            <br>
+            https://www.linkedin.com/in/anthonystansall/
+            <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="experience" class="container">
+    <h2>Experience</h2>
+    <hr>
+    <h3>Professional</h3>
+    <div class="experience">
+      <div class="experience row">
+        <div class="col-md-4">
+          <h4>Strategic Insight</h4>
+          <p class="experience-timeframe">
+            Jan 2019 - Present
+          </p>
+        </div>
+        <div class="col-md-8">
+          <p>
+            <strong>Data Analyst</strong>
+            <br>
+            <span class="experience-details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet doloremque sapiente veniam
+              accusantium. Odit facilis maxime vitae excepturi sequi atque soluta magnam, impedit laboriosam eligendi
+              natus. Aspernatur, vero magnam.
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="experience row">
+        <div class="col-md-4">
+          <h4>TEKsystems</h4>
+          <p class="experience-timeframe">
+            May 2016 - Jan 2019
+          </p>
+        </div>
+        <div class="col-md-8">
+          <p>
+            <strong>Technical Recruiter (Data Analytics & Insights)</strong>
+            <br>
+            <span class="experience-details">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae distinctio itaque similique illo
+              saepe amet, culpa ratione dicta ex sit et blanditiis in totam cum sed hic quis eligendi excepturi.
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="experience row">
+        <div class="col-md-4">
+          <h4>Techtronic Industries (TTI)</h4>
+          <p class="experience-timeframe">
+            Jan 2015 - May 2016
+          </p>
+        </div>
+        <div class="col-md-8">
+          <p>
+            <strong>Field and Sales Representative</strong>
+            <br>
+            <span class="experience-details">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae distinctio itaque similique illo
+              saepe amet, culpa ratione dicta ex sit et blanditiis in totam cum sed hic quis eligendi excepturi.
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <h3>Education</h3>
+    <div class="experience">
+      <div class="experience row">
+        <div class="col-md-4">
+          <h4>UCSD Extension</h4>
+          <p class="experience-timeframe">
+            Jan 2019 - Present
+          </p>
+        </div>
+        <div class="col-md-8">
+          <p>
+            <strong>Data Science & Visualization</strong>
+            <br>
+            <span class="experience-details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet doloremque sapiente veniam
+              accusantium. Odit facilis maxime vitae excepturi sequi atque soluta magnam, impedit laboriosam eligendi
+              natus. Aspernatur, vero magnam.
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="experience row">
+        <div class="col-md-4">
+          <h4>San Diego State University</h4>
+          <p class="experience-timeframe">
+            2010 - 2014
+          </p>
+        </div>
+        <div class="col-md-8">
+          <p>
+            <strong>B.S. in Psychology</strong>
+            <br>
+            <span class="experience-details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet doloremque sapiente veniam
+              accusantium. Odit facilis maxime vitae excepturi sequi atque soluta magnam, impedit laboriosam eligendi
+              natus. Aspernatur, vero magnam.
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="projects" class="container">
+    <h2>Projects</h2>
+    <hr>
+    <div class="row">
+      <div class="card-group">
+        <div class="card">
+          <a href="link goes here" target="_blank"><img class="card-img-top hovereffect" src="thumbnail image"
+              alt="world happiness"></a>
+          <div class="card-body">
+            <h4 class="card-title">World Happiness</h4>
+            <p class="card-text">A Python Flask app representing world happiness from 2015-2017 using D3.js - Plotly.js
+              and AnyChart.js to create visualization</p>
+            <small>Skills:<br> Python, Flask, SQL, SQLAlchemy, HTML, CSS, Bootstrap, JavaScript, Heroku</small><br>
+            <a href="https://github.com/astansall/web-latitude" target="_blank">
+              <small class="text-muted">GitHub Repository</small>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <a href="link goes here" target="_blank"><img class="card-img-top hovereffect" src="thumbnail image"
+              alt="world happiness"></a>
+          <div class="card-body">
+            <h4 class="card-title">World Happiness</h4>
+            <p class="card-text">A Python Flask app representing world happiness from 2015-2017 using D3.js - Plotly.js
+              and AnyChart.js to create visualization</p>
+            <small>Skills:<br> Python, Flask, SQL, SQLAlchemy, HTML, CSS, Bootstrap, JavaScript, Heroku</small><br>
+            <a href="https://github.com/astansall/web-latitude" target="_blank">
+              <small class="text-muted">GitHub Repository</small>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <a href="link goes here" target="_blank"><img class="card-img-top hovereffect" src="thumbnail image"
+              alt="world happiness"></a>
+          <div class="card-body">
+            <h4 class="card-title">World Happiness</h4>
+            <p class="card-text">A Python Flask app representing world happiness from 2015-2017 using D3.js - Plotly.js
+              and AnyChart.js to create visualization</p>
+            <small>Skills:<br> Python, Flask, SQL, SQLAlchemy, HTML, CSS, Bootstrap, JavaScript, Heroku</small><br>
+            <a href="https://github.com/astansall/web-latitude" target="_blank">
+              <small class="text-muted">GitHub Repository</small>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card-group">
+        <div class="card">
+          <a href="link goes here" target="_blank"><img class="card-img-top hovereffect" src="thumbnail image"
+              alt="world happiness"></a>
+          <div class="card-body">
+            <h4 class="card-title">World Happiness</h4>
+            <p class="card-text">A Python Flask app representing world happiness from 2015-2017 using D3.js - Plotly.js
+              and AnyChart.js to create visualization</p>
+            <small>Skills:<br> Python, Flask, SQL, SQLAlchemy, HTML, CSS, Bootstrap, JavaScript, Heroku</small><br>
+            <a href="https://github.com/astansall/web-latitude" target="_blank">
+              <small class="text-muted">GitHub Repository</small>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <a href="link goes here" target="_blank"><img class="card-img-top hovereffect" src="thumbnail image"
+              alt="world happiness"></a>
+          <div class="card-body">
+            <h4 class="card-title">World Happiness</h4>
+            <p class="card-text">A Python Flask app representing world happiness from 2015-2017 using D3.js - Plotly.js
+              and AnyChart.js to create visualization</p>
+            <small>Skills:<br> Python, Flask, SQL, SQLAlchemy, HTML, CSS, Bootstrap, JavaScript, Heroku</small><br>
+            <a href="https://github.com/astansall/web-latitude" target="_blank">
+              <small class="text-muted">GitHub Repository</small>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <a href="link goes here" target="_blank"><img class="card-img-top hovereffect" src="thumbnail image"
+              alt="world happiness"></a>
+          <div class="card-body">
+            <h4 class="card-title">World Happiness</h4>
+            <p class="card-text">A Python Flask app representing world happiness from 2015-2017 using D3.js - Plotly.js
+              and AnyChart.js to create visualization</p>
+            <small>Skills:<br> Python, Flask, SQL, SQLAlchemy, HTML, CSS, Bootstrap, JavaScript, Heroku</small><br>
+            <a href="https://github.com/astansall/web-latitude" target="_blank">
+              <small class="text-muted">GitHub Repository</small>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
