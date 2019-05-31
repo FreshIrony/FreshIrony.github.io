@@ -1,7 +1,7 @@
 html,
 body {
   color: #000000;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 20px;
 }
 body {
@@ -15,42 +15,51 @@ body {
   right: calc(-50vw + 50%);
   margin-left: auto;
   margin-right: auto;
+  margin-top: 300px;
   z-index: +1;
 }
-h1 {
+
+h1,
+p.lead {
+  /* font-family: 'Lato', sans-serif; */
   /* font-family: 'Open Sans Condensed', sans-serif; */
-  font-family: 'Amatic SC', cursive;
-  /* font-family: 'Playfair Display SC', serif; */
-  /* font-family: 'Chathura', sans-serif; */
+  /* font-family: 'Advent Pro', sans-serif; */
+  font-family: "Megrim", cursive;
   color: #ffffff;
-  font-size: 80px;
-  padding-top: 300px;
   text-align: center;
   /* text-transform: uppercase; */
 }
 
+p.lead {
+  /* font-family: "Lato", sans-serif; */
+  /* font-family: "Open Sans Condensed", sans-serif; */
+  font-family: "Advent Pro", sans-serif;
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 80px;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
 h2 {
   text-align: center;
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: #000000;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #4e4e4e;
   font-size: 54px;
 }
 
 h3 {
   color: #000000;
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
-p.lead {
-  font-family: 'Amatic SC', cursive;
-  color: #ffffff;
-  font-size: 40px;
-  text-align: center;
-  /* text-transform: uppercase; */
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 .navbar {
-  background: #141c1f;
+  background: #000000;
   opacity: 0.75;
 }
 
@@ -59,8 +68,8 @@ a {
 }
 
 .jumbotron {
-  /* background: no-repeat center right fixed url("background5.jpg"); */
-  background: #141c1f;
+  /* background: no-repeat center right fixed url("../images/background5.jpg"); */
+  background: #000000;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
